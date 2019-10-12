@@ -5,9 +5,9 @@ import java.util.Arrays;
 /**
  * 建造者模式
  *
- * @author 郁农欣 部门：电商事业部
+ * @author ynx
  * @version V1.0
- * @copyright Copyright 2014-2019 Chinalife-clec All Right Reserved
+ * @copyright ynx
  * @date 2019-10-12
  * @modified_date 2019-10-12
  */
