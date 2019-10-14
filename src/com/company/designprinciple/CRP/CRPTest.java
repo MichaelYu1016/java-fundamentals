@@ -56,7 +56,7 @@ class Black implements Color {
 }
 
 // Car
-abstract class Car implements Color {
+abstract class Car{
     protected Color color;
 
     Car(Color color){
@@ -66,6 +66,8 @@ abstract class Car implements Color {
     public void move() {
 
     }
+
+    public String getColor(){ return color.getColor();}
 }
 
 // GasolineCar
@@ -80,10 +82,10 @@ class GasolineCar extends Car {
         System.out.println("This "+getColor()+" car "+"use Gasoline");
     }
 
-    @Override
-    public String getColor() {
-        return color.getColor();
-    }
+//    @Override
+//    public String getColor() {
+//        return color.getColor();
+//    }
 }
 
 // ElectricCar
@@ -98,8 +100,8 @@ class ElectricCar extends Car {
         System.out.println("This "+getColor()+" car "+"use Electric");
     }
 
-    @Override
-    public String getColor() {
-        return color.getColor();
-    }
+//    @Override
+//    public String getColor() {
+//        return color.getColor();
+//    }
 }
