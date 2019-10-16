@@ -10,13 +10,15 @@ import java.util.concurrent.Executors;
  * @author ynx
  * @version V1.0
  * @date 2019-10-15
- * @modified_date 2019-10-15
+ * @modified_date 2019-10-16
  */
 public class AsyncTest {
 
     public static void main(String[] args) {
         //设置线程池
         ExecutorService executor = Executors.newFixedThreadPool(2);
+        // 使用可缓存线程池，会回收空闲线程（60秒不执行任务）
+        //ExecutorService executor = Executors.newCachedThreadPool();
         // 项目一
         CompletableFuture<String> future1 = CompletableFuture.supplyAsync(() -> {
             System.out.println("项目一开始实施");
@@ -50,5 +52,9 @@ public class AsyncTest {
         // 项目获取返回值后执行
         future1.thenAccept(System.out::println);
         future2.thenAccept(System.out::println);
+
+        // 关闭线程池（如使用可缓存线程不需要）
+        executor.shutdown();
+
     }
 }
