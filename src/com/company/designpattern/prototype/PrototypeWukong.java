@@ -33,6 +33,7 @@ class SunWukong extends JPanel implements Cloneable {
         this.add(l1);
     }
 
+    @Override
     public Object clone() {
         SunWukong w = null;
         try {

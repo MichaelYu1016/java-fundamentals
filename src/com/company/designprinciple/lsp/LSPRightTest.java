@@ -1,4 +1,4 @@
-package com.company.designprinciple.LSP;
+package com.company.designprinciple.lsp;
 
 /**
  * 里式替换原则-正确示例

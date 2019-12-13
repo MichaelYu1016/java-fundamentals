@@ -1,4 +1,4 @@
-package com.company.designprinciple.DIP;
+package com.company.designprinciple.dip;
 
 /**
  * 依赖倒置原则
@@ -27,6 +27,7 @@ interface Shop
 //韶关网店
 class ShaoguanShop implements Shop
 {
+    @Override
     public String sell()
     {
         return "韶关土特产：香菇、木耳……";
@@ -35,6 +36,7 @@ class ShaoguanShop implements Shop
 //婺源网店
 class WuyuanShop implements Shop
 {
+    @Override
     public String sell()
     {
         return "婺源土特产：绿茶、酒糟鱼……";

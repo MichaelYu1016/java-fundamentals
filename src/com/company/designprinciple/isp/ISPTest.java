@@ -1,4 +1,4 @@
-package com.company.designprinciple.ISP;
+package com.company.designprinciple.isp;
 
 /**
  * 接口隔离原则

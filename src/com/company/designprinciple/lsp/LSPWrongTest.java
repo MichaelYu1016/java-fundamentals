@@ -1,4 +1,4 @@
-package com.company.designprinciple.LSP;
+package com.company.designprinciple.lsp;
 
 /**
  * 里式替换原则-错误示例
@@ -46,6 +46,7 @@ class Swallow extends Bird{}
 //几维鸟类
 class BrownKiwi extends Bird
 {
+    @Override
     public void setSpeed(double speed)
     {
         flySpeed=0;

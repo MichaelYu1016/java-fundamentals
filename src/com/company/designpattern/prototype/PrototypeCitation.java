@@ -18,7 +18,7 @@ public class PrototypeCitation
         obj2.display();
     }
 }
-//奖状类
+/**奖状类*/
 class Citation implements Cloneable
 {
     String name;
@@ -43,6 +43,7 @@ class Citation implements Cloneable
     {
         System.out.println(name+info+college);
     }
+    @Override
     public Object clone() throws CloneNotSupportedException
     {
         System.out.println("奖状拷贝成功！");

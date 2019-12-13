@@ -1,4 +1,4 @@
-package com.company.designprinciple.CRP;
+package com.company.designprinciple.crp;
 
 /**
  * 组合复用原则

@@ -27,6 +27,7 @@ interface Shape extends Cloneable {
 }
 
 class Circle implements Shape {
+    @Override
     public Object clone() {
         Circle w = null;
         try {
@@ -37,6 +38,7 @@ class Circle implements Shape {
         return w;
     }
 
+    @Override
     public void countArea() {
         int r;
         System.out.print("这是一个圆，请输入圆的半径：");
@@ -47,6 +49,7 @@ class Circle implements Shape {
 }
 
 class Square implements Shape {
+    @Override
     public Object clone() {
         Square b = null;
         try {
@@ -57,6 +60,7 @@ class Square implements Shape {
         return b;
     }
 
+    @Override
     public void countArea() {
         int a;
         System.out.print("这是一个正方形，请输入它的边长：");

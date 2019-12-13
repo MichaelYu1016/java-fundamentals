@@ -1,4 +1,4 @@
-package com.company.designprinciple.LoD;
+package com.company.designprinciple.lod;
 
 /**
  * 迪米特法则
