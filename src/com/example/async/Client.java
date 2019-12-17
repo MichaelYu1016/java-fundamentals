@@ -17,13 +17,8 @@ public class Client implements CallBack {
 
     public void sendMsg(final String msg) {
         System.out.println("[客户端] 发送消息:"+ msg);
-
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                server.getClientMsg(Client.this,msg);
-            }
-        }).start();
+        /*使用lambda表达式代替Runnable匿名类*/
+        new Thread(() -> server.getClientMsg(Client.this,msg)).start();
         System.out.println("[客户端] 数据发送成功");
     }
 

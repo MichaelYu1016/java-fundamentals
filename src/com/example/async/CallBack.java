@@ -10,7 +10,7 @@ package com.example.async;
  */
 public interface CallBack {
     //处理结果回调
-    public void process(String message);
+    void process(String message);
     //服务端接收回调
-    public void report(String message);
+    void report(String message);
 }
