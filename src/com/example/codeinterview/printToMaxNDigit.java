@@ -2,7 +2,7 @@ package com.example.codeinterview;
 /**
  * 打印从1到N位数的最大值
  */
-public class printToMaxNDigit {
+public class PrintToMaxNDigit {
     public static void main(String[] args) {
         printMaxNDigit(2);
     }
