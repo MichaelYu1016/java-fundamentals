@@ -100,5 +100,7 @@ public class Main {
 //        long t1 = System.nanoTime();
 //        long millis = TimeUnit.NANOSECONDS.toMillis(t1 - t0);
 //        System.out.println(String.format("sequential sort took: %d ms",millis));
+        // 双括号初始化
+        System.out.println(new ArrayList<String>(){{add("ynx");add("first");}});
     }
 }
